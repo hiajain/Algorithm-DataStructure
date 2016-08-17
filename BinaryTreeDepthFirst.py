@@ -20,7 +20,7 @@ def printPreOrder(root):
 def printPostOrder(root):
 	if root:
 		printPostOrder(root.left)
-		printPostOrder(root.right)
+		printPreOrder(root.right)
 		print(root.data),
 		
 root = Node(1)
